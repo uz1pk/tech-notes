@@ -66,7 +66,7 @@ It's important to note at each layer below a "header" (some binary) is added to 
 
 # TLS/SSL
 
-Going to cover TLS/SSL since it doesn't really belong in any of the other sections and is relatively straight forward to understand.
+Going to cover TLS/SSL here, since it doesn't really belong in any of the other sections and is relatively straight forward to understand.
 # Important notes
 
 - For ANY device to have connectivity. It must have an assigned IP address, subnet mask, default gateway (router IP) and DNS server (Also an IP address) configureed.
