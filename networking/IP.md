@@ -82,12 +82,10 @@ You can also manually go into DHCP server settings and set a *reservation*. This
 4. **Acknowledge**: The selected DHCP server confirms the assignment by sending an Acknowledgement (ACK) message to the client. The client then configures its TCP/IP settings with the received information and can start communicating on the network
 # DNS (Domain Name System)
 
-TODO
-
+Responsible for translating domain names like `google.com` to actual IP addresses
 ### DNS over HTTPS or TLS
 
 TODO
-
 ### Dynamic DNS
 
 TODO
@@ -103,7 +101,6 @@ TODO: https://en.wikipedia.org/wiki/List_of_IP_protocol_numbers
 
 - BGP (Border Gateway Protocol)
 - EGP (Exterior Gateway Protocol)
-
 ### ASN (Autonomous System Number)
 
 TODO
