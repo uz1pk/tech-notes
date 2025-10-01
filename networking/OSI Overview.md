@@ -63,6 +63,10 @@ It's important to note at each layer below a "header" (some binary) is added to 
 		- On the response Host B will send directly to host A since it knows the destination based on the header above which included a source mac address
 - [Encapsulation + Decapsulation based on above, picture here](../pictures/encap-decap.png)
 
+
+# TLS/SSL
+
+Going to cover TLS/SSL since it doesn't really belong in any of the other sections and is relatively straight forward to understand.
 # Important notes
 
 - For ANY device to have connectivity. It must have an assigned IP address, subnet mask, default gateway (router IP) and DNS server (Also an IP address) configureed.
