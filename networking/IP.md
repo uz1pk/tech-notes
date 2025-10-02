@@ -107,3 +107,10 @@ TODO
 # VLAN (Virtual Local Area Network)
 
 VLAN is simply logically dividing a physically connected network into distinct "virtual" or fake networks that are still physically connected to improve network traffic, broadcasting, security, and making the network topology simpler and easier to handle, etc.
+# NDP (IPv6)
+
+TODO
+# RARP (Reverse Address Resolution Protocol)
+
+### Why is RARP obsolete and why DHCP is the standard
+TODO
