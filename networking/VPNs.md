@@ -1,4 +1,4 @@
-# What is a VPN
+# What is a VPN (Virtual Private Network)
 
 A secure, logical communication channel built over a public or untrusted network that enables remote systems or networks to behave as if they are directly connected on the same private network. This unlocks a few major things, security, reliability and anonymity 
 
@@ -6,6 +6,7 @@ VPN = abstraction, and depending on implementation, it can look like a “virtua
 # Tunneling
 
 TODO
+# VIN (Virtual Network Interface)
 # Layer 2 VPNs
 
 TODO
