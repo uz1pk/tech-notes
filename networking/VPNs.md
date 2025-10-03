@@ -1,5 +1,7 @@
 # What is a VPN (Virtual Private Network)
 
+TODO(uzaheer): The key to understanding VPNs is understanding how data changes going up and down the OSI model and at what points. Understanding L3 <> L2 interaction is extremely important. Alongside TUN/TAP linux network interfaces
+
 Before going into what is a VPN is lets talk about what it aims to address.
 - In cases where data isn't encrypted (HTTP), VPNs encrypt the data locally on your machine, tunnel the traffic to some VPN server, decrypt it and send it to the destination. This prevents local network sniffers and ISPs from logging/seeing your data.
 	- Caveat here is if the host machine itself has malware, they data could be read prior to even leaving the machine. Alongside this from the VPN server to the destination server the data is unencrypted
@@ -7,6 +9,8 @@ Before going into what is a VPN is lets talk about what it aims to address.
 	- We will discuss how later but VPNs hide that association of your public IP <> destination IP by introducing an intermediary (basically a proxy)
 - Bypassing regional IP bans, since IP address spaces are assigned to different regions. There might be government or ISP level blocking happening when attempting to connect to a blocked website.
 	- You can now access that destination via VPN (assuming the VPN server itself is not blocked)
+- Making it seem as if you are connecting too a private network server
+	- The VPN client on your machine will do some IP overrides, DNS entry manipulation, etc. But from the client's end it looks like `private-server.com` just works
 	
 There are many more use cases but this is just to list a few.
 
