@@ -32,11 +32,9 @@ Then when the VPN server receives the outer packet decrypts and reads the inside
 This unlocks
 - Login once, auth'd everywhere in a private network vs having an API / application level path based routing from the public internet via VPN gateway (see below) which would require logging into to each individual server
 - TODO
-
 ### VPN Gateway
 
 Is simply some public server/IP that routes request using some mechanism (and example is maybe API route path based routing /my-api/server1) to internal server.
-
 ### How decapsulation and routing works
 
 1. The VPN server is just running VPN software (e.g., OpenVPN, WireGuard, IPSec).
@@ -63,6 +61,10 @@ Virtual NICs in general are exposed via TUN/TAP devices on linux and the operati
 
 TODO
 # Layer 3 VPNs
+
+TODO
+
+### VPNs via UDP
 
 TODO
 # Layer 4 VPNs
