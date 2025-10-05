@@ -20,7 +20,14 @@ This tuple uniquely identifies a network session between a local process and a r
 TODO
 # TUN/TAP devices
 
-TODO
+TUN/TAP devices are virtual / fake interfaces that represent physical hardware, this unlocks the ability for programmers to interface with the kernels network stack to add any custom logic they'd like to implement.
+
+### TUN (L3 virtual network interface)
+
+A TUN device exposes a L3 virtual network interface which allows programs to listen for packets on the allocated TUN device (Same way you can listen on specific ports using the sockets API). You can then assign an IP address to that device alongside configure in your system's kernel what destination IP addresses should be routed to your TUN device.
+### TAP (L2 virtual ethernet interface)
+
+Same thing as the TUN device except it works at the L2 level. Instead of working with IP packets it works directly with L2 ethernet data frames. This layer is generally used in VMs, simulated LANs by bridging virtual hosts.
 # netstat
 
 TODO
@@ -35,3 +42,10 @@ TODO
 # BPF and eBPF
 
 TODO
+
+# User vs Kernel Space
+
+User space == programs running outside of the operating system's kernel (non-privileged)
+- No direct access to physical memory (rather APIs exposed by OS, malloc for ex)
+- No direct access to all hardware (also APIs)
+- More important no/little control over CPU, other resources and security
