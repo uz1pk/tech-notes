@@ -1,5 +1,5 @@
 
-TODO better organize these notes and break it up into more digestible sections.
+TODO better organize these notes and break it up into more digestible sections
 # What is a VPN (Virtual Private Network)
 
 TODO(uzaheer): The key to understanding VPNs is understanding how data changes going up and down the OSI model and at what points. Understanding L3 <> L2 interaction is extremely important. Alongside TUN/TAP linux network interfaces
