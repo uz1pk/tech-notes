@@ -18,14 +18,24 @@ This tuple uniquely identifies a network session between a local process and a r
 # tcpdump
 
 TODO
-# TUN/TAP devices
+
+# Bridge Interface 
+
+Network interfaces you will see below provides an abstraction for sending and receiving data from a host machine on a network. The bridge interface is the same thing but for the Layer 2 or Mac address level. This means multiple devices, containers, etc can share a single network interface  but have bridges to communicate with each other
+e.g.
+- A pod in k8s has a single network interface
+- A pod can have multiple containers
+- Containers use the bridge interface to communicate with each other inside the pod (TAP)
+# Network Interface 
+
+Network interface is simply the way a computer, process, OS, host machine makes contact with the outside world (other computers). This can be physical like ethernet cables, wifi cards, etc. Or it can be virtual (acts like a physical card but gets handled by another process then mapped out, aka TUN)
 
 TUN/TAP devices are virtual / fake interfaces that represent physical hardware, this unlocks the ability for programmers to interface with the kernels network stack to add any custom logic they'd like to implement.
 
-### TUN (L3 virtual network interface)
+## TUN (L3 virtual network interface)
 
 A TUN device exposes a L3 virtual network interface which allows programs to listen for packets on the allocated TUN device (Same way you can listen on specific ports using the sockets API). You can then assign an IP address to that device alongside configure in your system's kernel what destination IP addresses should be routed to your TUN device.
-### TAP (L2 virtual ethernet interface)
+## TAP (L2 virtual ethernet interface)
 
 Same thing as the TUN device except it works at the L2 level. Instead of working with IP packets it works directly with L2 ethernet data frames. This layer is generally used in VMs, simulated LANs by bridging virtual hosts.
 # netstat
